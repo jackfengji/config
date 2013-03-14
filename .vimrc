@@ -69,11 +69,11 @@ autocmd BufNewFile *.py  0r ~/.vim/template/python.tpl
 " set backspace=indent,eol,start
 
 set nobackup		" do not keep a backup file, use versions instead
-set so=7
-set number
+set so=7            " keep 7 lines
+set number          " show line
 
-set expandtab
-set tabstop=4
+set expandtab       " expand tabs to space
+set tabstop=4       " all tabs are 4 space
 set shiftwidth=4
 set softtabstop=4
 set smarttab
@@ -143,7 +143,5 @@ if has("autocmd")
   augroup END
 
 else
-
   set autoindent		" always set autoindenting on
-
 endif " has("autocmd")
