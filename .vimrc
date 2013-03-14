@@ -32,13 +32,35 @@ set noerrorbells
 map <F4> :Tlist<CR>
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Show_One_File = 1
-let Tlist_Auto_Open = 1
+"let Tlist_Auto_Open = 1
+if has("unix")
+    let s:uname = system("uname")
+    if s:uname == "Darwin\n" " we specify which ctags to use for mac osx
+        let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
+    endif
+endif
 
 """""""""""""""""""""""""
 " SuperTab
 """""""""""""""""""""""""
 let g:SuperTabRetainCompletionType = 2
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+
+"""""""""""""""""""""""""
+" WinManager
+"""""""""""""""""""""""""
+let g:winManagerWindowLayout = "TagList|FileExplorer,BufExplorer"
+nmap <silent> <F8> :WMToggle<cr>
+"let g:winManagerAutoOpen = 1
+let g:winManagerWidth=35
+
+
+"""""""""""""""""""""""""
+" templates
+"""""""""""""""""""""""""
+autocmd BufNewFile *.html  0r ~/.vim/template/html.tpl
+autocmd BufNewFile *.xml  0r ~/.vim/template/xml.tpl
+autocmd BufNewFile *.py  0r ~/.vim/template/python.tpl
 
 "au FileType java setlocal omnifunc=javacomplete#Complete
 "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
