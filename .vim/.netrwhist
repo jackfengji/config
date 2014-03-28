@@ -1,7 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/media/Programming/eclair/apps/Gallery3D'
-let g:netrw_dirhist_2='/home/jackfengji/programming/locatify/TourGuide/bin'
-let g:netrw_dirhist_3='/home/jackfengji/programming/locatify/TourGuide/src'
-let g:netrw_dirhist_4='/home/jackfengji/programming/locatify/python/mysite/apache'
-let g:netrw_dirhist_5='/home/jackfengji/.vim'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/apple/Downloads/weibo/res'
+let g:netrw_dirhist_2='/Users/apple/Downloads/weibo/res/values'
+let g:netrw_dirhist_3='/Users/apple/workspace/lechang/ku3d/Ku3DEngine/build'
+let g:netrw_dirhist_4='/Users/apple/workspace/android/buildtools/tools/build/gradle/src/main/groovy/com/android/build/gradle/tasks'
+let g:netrw_dirhist_5='/Users/apple/workspace/lechang/ku3d/KuHome/build'
+let g:netrw_dirhist_6='/Users/apple/workspace/android/4.3/.repo'
+let g:netrw_dirhist_7='/Users/apple/AndroidStudioProjects/LocatifyLib/build'
+let g:netrw_dirhist_8='/Users/apple/workspace/locatify/LocatifyGuide/ios/LocatifyGuide/is.lproj'
+let g:netrw_dirhist_9='/Users/apple/workspace/gradle/gradle-samples-0.9/ndkSanAngeles/src/main'
